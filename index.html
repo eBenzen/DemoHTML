@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Demo Page</title>
+  <meta charset="UTF-8" />
+  <title>Dancing Banana Demo</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #222;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+    .banana {
+      font-size: 100px;
+      animation: dance 0.6s infinite alternate;
+      display: inline-block;
+    }
+    @keyframes dance {
+      0% { transform: rotate(-20deg); }
+      100% { transform: rotate(20deg); }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is a simple HTML file under Git.</p>
+  <h1>🍌 Dancing Banana Time 🍌</h1>
+  <div class="banana">💃🍌</div>
+  <p>Built by Eric, updated locally and deployed to GitHub Pages!</p>
 </body>
 </html>
